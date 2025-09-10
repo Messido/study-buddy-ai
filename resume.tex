@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\ % #2 is bolded by default
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Siddhant Jagati} \\ \vspace{0pt}
+    % New Delhi, India \\ \vspace{1pt} % You can replace this with a more specific address if desired
+    \small \raisebox{-0.1\height}\faPhone\ \href{https://wa.me/8750423341}{+91 8750423341} \hspace{0.5cm}
+    \href{mailto:siddhant1jagati@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  siddhant1jagati@gmail.com} \hspace{0.5cm}
+    \href{https://www.linkedin.com/in/siddhant-jagati-b156b8203/}{\raisebox{-0.2\height}\faLinkedin\ linkedin.com/in/siddhant-jagati} \hspace{0.5cm}
+    \href{https://github.com/Messido}{\raisebox{-0.2\height}\faGithub\ github.com/Messido}
+    \vspace{-10pt}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\vspace{2pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, TypeScript, Java} \\ 
+     \textbf{Frameworks/Libraries}{: React.js, Next.js, Node.js, FastAPI, LangChain, LangGraph, Streamlit,  Tailwind CSS, Prisma} \\
+     \textbf{Databases}{: MySQL, MongoDB, OpenSearch, Vector Databases} \\
+     \textbf{LLMs/AI}{: OpenAI GPT-4, Google Gemini, Groq, Llama Models, Ollama, DeepSeek, Pydantic} \\
+     \textbf{Tools/Technologies}{: Docker, Kubernetes, GitOps, CI/CD, Git, Github} 
+    }}
+ \end{itemize}
+ \vspace{-18pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\vspace{2pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading % New SenecaGlobal Internship
+      {SenecaGlobal}{Jan. 2025 -- Mar. 2025}
+      {Software Engineer Intern}{Hyderabad, Telangana, India}
+      \resumeItemListStart
+        \resumeItem{Architected \textbf{ShiftSpace} workplace booking system using \textbf{Next.js}, \textbf{Node.js}, \textbf{Prisma ORM}, and \textbf{MySQL} with secure authentication (\textbf{Next Auth}) and \textbf{role-based access control} for WFH/WFO management serving \textbf{200+ employees}.}
+        \resumeItem{Engineered interactive UI with visual office map for seat selection and comprehensive \textbf{admin panel} for \textbf{real-time analytics}, streamlining shift allocation through automated booking workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading % Existing TCS Internship
+      {Tata Consultancy Services}{Aug. 2024 -- Oct. 2024}
+      {Backend Developer Intern}{Hyderabad, Telangana, India}
+      \resumeItemListStart
+        \resumeItem{Implemented backend services for \textbf{large-scale enterprise application} with \textbf{8 RESTful APIs}, focusing on \textbf{performance optimization}, \textbf{security protocols}, and \textbf{JWT-based authentication} for enterprise data management.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-3pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{IntelliSearch AI} $|$ \href{https://github.com/Messido/IntelliSearch-AI}{\underline{GitHub}} $|$ \emph{Next.js, FastAPI, LangGraph, Gemini , Tavily API, TypeScript, Python}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a \textbf{LangGraph-powered} conversational AI system with \textbf{intelligent tool routing}, enabling automated \textbf{web search integration} and \textbf{real-time response streaming} via \textbf{FastAPI}.}
+            \resumeItem{Architected \textbf{scalable backend infrastructure} using \textbf{FastAPI} with \textbf{CORS middleware}, \textbf{memory-based checkpointing} for \textbf{session persistence}, and \textbf{asynchronous event streaming} supporting \textbf{concurrent user sessions}.}
+            \resumeItem{Crafted responsive \textbf{React frontend} with \textbf{TypeScript}, featuring \textbf{real-time search stage visualization}, \textbf{message streaming} with loading states, and clean UI components optimized for \textbf{cross-platform compatibility}.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{AdaptiveQuiz AI} $|$ \href{https://github.com/Messido/study-buddy-ai}{\underline{GitHub}} $|$ \emph{Python, LangChain, Groq LLM, Streamlit, Pydantic, Docker, Kubernetes}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered an \textbf{enterprise-grade} adaptive quiz generation system leveraging \textbf{Groq's Llama-3.1-8B model} with \textbf{LangChain framework}, implementing \textbf{adaptive prompt engineering} and \textbf{structured output parsing} via \textbf{Pydantic schemas} across \textbf{20+ academic topics}.}
+            \resumeItem{Orchestrated robust \textbf{LLM pipeline} with \textbf{retry mechanisms}, \textbf{custom exception handling}, and \textbf{structured logging}, achieving \textbf{95\% successful question generation rate} with configurable difficulty levels.}
+            \resumeItem{Deployed \textbf{scalable containerized solution} using \textbf{Docker} and \textbf{Kubernetes} with \textbf{GitOps CI/CD pipeline}, supporting concurrent user sessions with \textbf{session state management} and CSV result export functionality.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Fullstack Multimodal RAG System} $|$ \href{https://github.com/Messido/multimodal-rag}{\underline{GitHub}} $|$ \emph{Python, OpenSearch, Gemini, Ollama, Docker, Gradio, LangChain}}{}
+          \resumeItemListStart
+            \resumeItem{Constructed a \textbf{production-ready multimodal RAG system} processing both \textbf{text and image data}, implementing \textbf{hybrid search} (keyword + semantic + cosine similarity) achieving \textbf{40\% better retrieval accuracy} compared to single-method approaches.}
+            \resumeItem{Established scalable \textbf{OpenSearch vector database} with \textbf{KNN indexing} and \textbf{768-dimensional embeddings}, supporting \textbf{real-time semantic search} with containerized deployment.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\vspace{2pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Maharaja Surajmal Institute of Technology, GGSIPU}{Aug. 2022 -- May 2026 (Expected)}
+      {Bachelor of Technology in Information Technology, CGPA: 8.364}{New Delhi, India}
+    \resumeSubheading
+      {Bluebells School International}{CBSE Board}
+      {Class XII: 89.6\%, Class X: 87\%}{New Delhi, India}
+  \resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------ACHIEVEMENTS & CERTIFICATIONS---------------
+\section{Achievements \& Certifications}
+\vspace{2pt}
+    \resumeSubHeadingListStart
+        \resumeItemListStart
+            \resumeItem{Secured \textbf{3rd place} at SpaceHack Hackathon 2023, IIIT Delhi among \textbf{150+ participants} with innovative space technology solution.}
+            \resumeItem{Completed \textbf{4 professional certifications}: LLMOps \& AIOps Bootcamp (Krish Naik), 100xDevs Cohort 2.0, Data Structures \& Algorithms (Coding Blocks)}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
